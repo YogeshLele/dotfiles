@@ -36,6 +36,9 @@ let g:mapleader = ","
 nmap <leader>w :w!<cr>
 imap <leader>e <Esc>
 
+nmap <leader>q :q!<cr>
+imap <leader>q <Esc>:q!<cr>
+
 set nu
 
 " Turn on the WiLd menu
@@ -256,3 +259,6 @@ let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 let g:molokai_original = 1
+
+colorscheme molokai
+set background=dark

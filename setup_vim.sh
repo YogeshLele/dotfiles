@@ -13,7 +13,6 @@ fi
 
 git config --global credential.helper "cache --timeout=36000000"
 
-#get(git) my repo
 printf "\nInstalling Vundle...."
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -21,5 +20,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 printf "\nInstalling plugins...."
 cp vimrc ~/.vimrc
 vim +PluginInstall +qall
+
+printf "Installing molokai theme colors..."
+mkdir -p /tmp/vim_install_temp
+git clone https://github.com/tomasr/molokai.git /tmp/vim_install_temp
+mkdir -p ~/.vim/colors && cp /tmp/vim_install_temp/colors/molokai.vim ~/.vim/colors/
+printf "Added molokai to ~/.vim/colors"
 
 printf "\nInstallation done....\n"
