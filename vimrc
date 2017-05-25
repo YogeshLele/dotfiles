@@ -19,8 +19,8 @@ Plugin 'VundleVim/Vundle.vim'
 "" plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 
-"Plugin 'itchyny/lightline.vim'
-Plugin 'vim-airline/vim-airline'
+Plugin 'itchyny/lightline.vim'
+"Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
@@ -102,6 +102,10 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
+if ! has("gui_running") 
+    set t_Co=256 
+endif 
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
@@ -158,7 +162,7 @@ map <C-l> <C-W>l
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 if exists('$TMUX')
-    set laststatus=1
+    set laststatus=2
 else
     set laststatus=2
 endif
@@ -258,7 +262,7 @@ let g:syntastic_python_checkers=['pyflakes']
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
-let g:molokai_original = 1
+"let g:molokai_original = 1
 
 colorscheme molokai
 set background=dark
