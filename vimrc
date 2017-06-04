@@ -22,6 +22,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'itchyny/lightline.vim'
 "Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
 call vundle#end()
 
 "no annoying sounds on error
@@ -35,6 +37,7 @@ let g:mapleader = ","
 
 nmap <leader>w :w!<cr>
 imap <leader>e <Esc>
+imap jj <Esc>
 
 nmap <leader>q :q!<cr>
 imap <leader>q <Esc>:q!<cr>
@@ -56,7 +59,7 @@ endif
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
@@ -266,3 +269,9 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 colorscheme molokai
 set background=dark
+
+
+" cpp highlight
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
