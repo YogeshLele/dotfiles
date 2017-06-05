@@ -23,6 +23,7 @@ Plugin 'itchyny/lightline.vim'
 "Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 
