@@ -260,6 +260,7 @@ let g:lightline = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python
 let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_args='--ignore="E501"'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -278,7 +279,7 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 let g:molokai_original = 1
 
-colorscheme molokai
+colorscheme delek
 set background=dark
 
 
