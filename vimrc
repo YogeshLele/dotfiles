@@ -262,8 +262,12 @@ let g:lightline = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python
 let g:syntastic_python_checkers=['flake8']
+<<<<<<< HEAD
 let g:syntastic_python_flake8_args='--ignore=E501'
 let python_highlight_all = 1
+=======
+let g:syntastic_python_flake8_args='--ignore="E501"'
+>>>>>>> 35176110b7160e965ef8b634b51a7d338d5cf381
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
