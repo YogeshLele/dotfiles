@@ -1,8 +1,9 @@
 #!/bin/bash
 #backup existing ~/.vimrc to ~/.vimrc_bkp
 printf "\nBacking up previous vimrc to ~/.vimrc_bkp"
-mkdir -p ~/.vim_bkp
-cp ~/.vimrc ~/.vim_bkp/
+mkdir -p ~/.rc_bkp
+cp ~/.vimrc ~/.rc_bkp/
+cp ~/.tmux.conf ~/.rc/bkp/
 
 git --version 2>&1 >/dev/null
 GIT_IS_AVAILABLE=$?
