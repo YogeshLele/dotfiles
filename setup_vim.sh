@@ -19,6 +19,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #run the installation script
 printf "\nInstalling plugins...."
+cp tmux.conf ~/.tmux.conf
 cp vimrc ~/.vimrc
 vim +PluginInstall +qall
 
