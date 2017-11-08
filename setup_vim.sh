@@ -30,5 +30,7 @@ mkdir -p ~/.vim/colors && cp /tmp/vim_install_temp/colors/molokai.vim ~/.vim/col
 printf "Added molokai to ~/.vim/colors"
 
 echo "export TERM=xterm-256color" >> ~/.bashrc
+echo "PS1='\w\$ '" >> ~/.bashrc
+
 
 printf "\nInstallation done....\n"
