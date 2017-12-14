@@ -281,7 +281,7 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 
 let g:molokai_original = 1
 
-colorscheme delek
+colorscheme molokai
 set background=dark
 
 
